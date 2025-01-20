@@ -15,12 +15,6 @@
     },
     "author": "wp.l<freemode1614@outlook.com>",
     "license": "MIT",
-    "scripts": {
-        "dev": "cross-env NODE_ENV=development pnpm start",
-        "start": "tsup --watch",
-        "build": "cross-env NODE_ENV=production tsup",
-        "test": "cross-env NODE_ENV=ci vitest --watch false"
-    },
     "exports": {
         "./package.json": "./package.json",
         "./tsconfig/*": {
@@ -37,6 +31,13 @@
             "import": "./npm/index.js",
             "require": "./npm/index.cjs"
         }
+    },
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development pnpm start",
+        "start": "tsup --watch",
+        "build": "cross-env NODE_ENV=production tsup",
+        "test": "cross-env NODE_ENV=ci vitest --watch false",
+        "prepublishOnly": "npm run build"
     },
     "devDependencies": {
         "@changesets/cli": "^2.27.11",
