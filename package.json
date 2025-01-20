@@ -1,0 +1,54 @@
+{
+    "name": "@moccona/preset-config",
+    "version": "0.0.1",
+    "description": "A set of preset configs for standardizing and streamlining configuration across projects. Includes pre-configured settings for common tools like TypeScript, Prettier, and Browserslist to ensure consistent development workflows with minimal setup.",
+    "type": "module",
+    "main": "./npm/index.js",
+    "module": "./npm/index.js",
+    "types": "./npm/index.d.ts",
+    "keywords": [
+        "configuration",
+        "prettierrc"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "author": "wp.l<freemode1614@outlook.com>",
+    "license": "MIT",
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development pnpm start",
+        "start": "tsup --watch",
+        "build": "cross-env NODE_ENV=production tsup",
+        "test": "cross-env NODE_ENV=ci vitest --watch false"
+    },
+    "exports": {
+        "./package.json": "./package.json",
+        "./tsconfig/*": {
+            "import": "./tsconfig/*",
+            "require": "./tsconfig/*"
+        },
+        "./*": {
+            "types": "./npm/*.d.ts",
+            "import": "./npm/*.js",
+            "require": "./npm/*.cjs"
+        },
+        ".": {
+            "types": "./npm/index.d.ts",
+            "import": "./npm/index.js",
+            "require": "./npm/index.cjs"
+        }
+    },
+    "devDependencies": {
+        "@changesets/cli": "^2.27.11",
+        "@moccona/eslint-config": "latest",
+        "@types/node": "^20.17.14",
+        "cross-env": "^7.0.3",
+        "prettier": "^3.4.2",
+        "tsup": "^8.3.5",
+        "typescript": "^5.7.3",
+        "vite": "^6.0.7",
+        "vitest": "^3.0.2"
+    },
+    "prettier": "./npm/prettierrc.js",
+    "packageManager": "pnpm@8.15.3"
+}

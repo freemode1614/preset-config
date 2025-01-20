@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "module": "ESNext",
+    "lib": [
+      "ESNext"
+    ],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "strict": true,
+    "allowJs": true,
+    "baseUrl": "."
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
