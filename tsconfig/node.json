@@ -8,7 +8,7 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    "target": "ES6",
+    "target": "ES2018",
     "moduleResolution": "bundler",
     "noImplicitAny": true,
     "sourceMap": true,
