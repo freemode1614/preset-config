@@ -1,6 +1,6 @@
 {
     "name": "@moccona/preset-config",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "A set of preset configs for standardizing and streamlining configuration across projects. Includes pre-configured settings for common tools like TypeScript, Prettier, and Browserslist to ensure consistent development workflows with minimal setup.",
     "type": "module",
     "main": "./npm/index.js",

@@ -1,5 +1,11 @@
 # @moccona/preset-config
 
+## 0.0.3
+
+### Patch Changes
+
+- Update node tsconfig.json
+
 ## 0.0.2
 
 ### Patch Changes
