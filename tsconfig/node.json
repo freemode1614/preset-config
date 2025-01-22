@@ -8,14 +8,15 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    "target": "es6",
-    "moduleResolution": "node",
+    "target": "ES6",
+    "moduleResolution": "bundler",
     "noImplicitAny": true,
     "sourceMap": true,
     "strict": true,
     "allowJs": true,
   },
   "include": [
-    "src/**/*"
+    "src",
+    "app"
   ]
 }
