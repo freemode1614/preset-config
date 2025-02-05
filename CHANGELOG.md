@@ -1,5 +1,11 @@
 # @moccona/preset-config
 
+## 0.0.4
+
+### Patch Changes
+
+- Remove include in tsconfig
+
 ## 0.0.3
 
 ### Patch Changes
