@@ -7,8 +7,8 @@
   "module": "./npm/index.js",
   "types": "./npm/index.d.ts",
   "keywords": [
-    "configuration",
-    "prettierrc"
+    "prettierrc",
+    "tsconfig"
   ],
   "publishConfig": {
     "access": "public"
@@ -53,4 +53,3 @@
   "prettier": "./npm/prettierrc.js",
   "packageManager": "pnpm@8.15.3"
 }
-
