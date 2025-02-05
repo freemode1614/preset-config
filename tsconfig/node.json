@@ -17,5 +17,10 @@
     "strictNullChecks": true,
     "alwaysStrict": true,
     "allowJs": true,
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
   },
 }

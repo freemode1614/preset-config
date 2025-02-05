@@ -4,7 +4,7 @@
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": [
-      "ES2021",
+      "ESNext",
       "DOM",
       "DOM.Iterable"
     ],
@@ -21,6 +21,10 @@
     "noUnusedParameters": true,
     "noImplicitAny": true,
     "noFallthroughCasesInSwitch": true,
-    "paths": {}
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
   },
 }
