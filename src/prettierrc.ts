@@ -13,6 +13,18 @@ const overrides: Config["overrides"] = [
       parser: `jsonc`,
     },
   },
+  {
+    files: ["*.md"],
+    options: {
+      parser: `markdown`,
+    },
+  },
+  {
+    files: ["*.yaml"],
+    options: {
+      parser: `yaml`,
+    },
+  },
 ];
 
 const config: Config = {
