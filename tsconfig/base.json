@@ -1,6 +1,5 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "./base.json",
   "compilerOptions": {
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
@@ -21,7 +20,8 @@
     "sourceMap": true,
     "strict": true,
     "strictNullChecks": true,
-    "target": "ESNext"
+    "target": "ESNext",
+    "typeRoots": ["node_modules/@types"]
   },
   "include": [
     "src/**/*",
@@ -33,5 +33,6 @@
     "build",
     "coverage",
     "npm"
-  ]
+  ],
+  "comments": "This is the base configuration for shared TypeScript/Node.js projects. It should be extended by other projects to add specific configurations."
 }

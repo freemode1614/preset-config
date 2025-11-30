@@ -10,10 +10,14 @@
     "prettierrc",
     "tsconfig"
   ],
+  "files": [
+    "npm",
+    "tsconfig"
+  ],
   "publishConfig": {
     "access": "public"
   },
-  "author": "wp.l<freemode1614@outlook.com>",
+  "author": "freemode1614 <freemode1614@outlook.com>",
   "license": "MIT",
   "exports": {
     "./package.json": "./package.json",
@@ -33,23 +37,17 @@
     }
   },
   "scripts": {
-    "dev": "cross-env NODE_ENV=development pnpm start",
-    "start": "tsup --watch",
-    "build": "cross-env NODE_ENV=production tsup",
-    "test": "cross-env NODE_ENV=ci vitest --watch false",
+    "test": "vitest --watch false",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.11",
-    "@moccona/eslint-config": "latest",
     "@types/node": "^20.17.14",
-    "cross-env": "^7.0.3",
-    "prettier": "^3.4.2",
-    "tsup": "^8.3.5",
+    "browserslist": "^4.28.0",
+    "prettier": "^3.7.3",
     "typescript": "^5.7.3",
     "vite": "^6.0.7",
     "vitest": "^3.0.2"
   },
-  "prettier": "./npm/prettierrc.js",
   "packageManager": "pnpm@8.15.3"
 }
