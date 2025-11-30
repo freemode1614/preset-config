@@ -2,23 +2,19 @@
   "name": "@moccona/preset-config",
   "version": "0.0.5",
   "description": "A set of preset configs for standardizing and streamlining configuration across projects. Includes pre-configured settings for common tools like TypeScript, Prettier, and Browserslist to ensure consistent development workflows with minimal setup.",
-  "type": "module",
-  "main": "./npm/index.js",
-  "module": "./npm/index.js",
-  "types": "./npm/index.d.ts",
-  "keywords": [
-    "prettierrc",
-    "tsconfig"
-  ],
   "files": [
-    "npm",
-    "tsconfig"
+    "tsconfig",
+    "index.js",
+    "prettierrc.js"
   ],
   "publishConfig": {
     "access": "public"
   },
   "author": "freemode1614 <freemode1614@outlook.com>",
   "license": "MIT",
+  "type": "module",
+  "main": "./index.js",
+  "module": "./index.js",
   "exports": {
     "./package.json": "./package.json",
     "./tsconfig/*": {
@@ -26,12 +22,10 @@
       "require": "./tsconfig/*"
     },
     "./*": {
-      "types": "./npm/*.d.ts",
-      "import": "./npm/*.js",
-      "require": "./npm/*.cjs"
+      "import": "./*.js",
+      "require": "./*.cjs"
     },
     ".": {
-      "types": "./npm/index.d.ts",
       "import": "./npm/index.js",
       "require": "./npm/index.cjs"
     }
